@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist/jobhub/browser"
+
+# Angular handles page addresses itself: every address must open index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
